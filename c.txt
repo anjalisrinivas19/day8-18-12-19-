@@ -1,0 +1,153 @@
+Flavours of c
+
+Name of c                             Platform
+
+1)ANSI                               Unix
+2)Dynamic                            Linux
+3)Turbo C                            MS-DOS
+4)Borland C                          Windows
+5)Microsoft c                        Windows
+6)Pro C                              Oracle  
+
+BAckground files in turboc/ Dev c
+
+1)college.c     -     source code
+2)college.bak (backup)  -     backup files
+3)college.obj(machine file)   -     object file
+4)college.exe   -     executable file  
+for every platform need to share and complie it again
+
+variable declarations:
+I------------P------------O
+
+
+gets() - to read a string with multiple words
+scanf("[\n%s]",name);
+
+fflush(stdin);(clearing buffer )
+
+
+format specifiers:
+
+%d - int
+%f - float
+%c - char
+%s - string
+%ld - long int
+%u  - unsinged
+%i - int
+
+
+Escape sequence:
+
+\n - new line
+\t - new tab
+\b - backspace
+\a - alert
+\\ - backslash
+\' - single quote
+\" - double quote
+
+ printf( " \"Hello World\" ");
+to print "hello world"
+
+++ and -- are said to be unary operators
+
+operators:
+
+arithmetical:
++,-,*,/,%
+logical operators:
+&&(and)
+||
+!
+relational:
+<
+>
+<=
+>=
+==
+!=
+Assignment
+ =
+Arithmetic assignment
++=
+-=
+*=
+/=
+conditional or turnary operator:
+ ?
+
+
+#include <stdio.h>
+
+int main()
+{
+    int a,b;
+    printf( "\n enter a,b values:" );
+    scanf( "%d",&a,&b );
+    
+      printf(a>b ? "a is greater": a<b ? "a is lesser" :  "equal" );
+
+     return 0;
+}
+
+Misc operators
+*
+.
+->
+&
+ 
+control statements:
+1) conditional control statement
+*if 
+*if else
+*else if(nested if)
+
+2)case control statement
+switch
+Type casting:atoi(alphabet to integer),atof(alphabet to float)
+1)implicit 
+2)explicit 
+256 ascii values(0-255)
+48-57(0-9)
+65-90(A-Z)uppercase
+97-122(a-z)lowercase
+
+
+#to print all ascii values
+
+
+#include <stdio.h>
+
+int main()
+{
+    int i;
+    for(i=0;i<256;i++)
+    
+    
+    printf("\n  %d \t %c",i,i);
+    
+
+   
+}
+
+
+
+
+main()-user defined
+aruguments could be passed to main as these are optional so we are not using it:
+int main(int argc,char*argv[])
+argc-argument count
+argv argument values
+
+
+  tot=s1+s2+s3;
+    avg=(float)tot/3[ for student marks]
+    
+without case 1 and case 2 we could use case +,case - 
+by:
+after enter choice 
+ch=getche();
+//fflush(stdin);
+//scanf("%c",&ch);
